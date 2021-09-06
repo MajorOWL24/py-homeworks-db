@@ -18,3 +18,12 @@ CREATE TABLE IF NOT EXISTS public.tracks
     id integer,
     "length of time" smallint
 );
+
+ALTER TABLE public."Performers"
+    ADD PRIMARY KEY (id);
+
+ALTER TABLE public.albums
+    ADD PRIMARY KEY (id);
+
+ALTER TABLE public.tracks
+    ADD PRIMARY KEY (id);
